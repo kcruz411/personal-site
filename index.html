@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kathryn Cruz | Personal Site</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">Kathryn Cruz</a>
+      <button class="nav-toggle" aria-label="toggle menu">☰</button>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero">
+    <div class="hero-inner">
+      <h1>Hi, I’m Kathryn</h1>
+      <p>
+        I’m a Computer Science & Applied Mathematics student passionate about 
+        building elegant software, exploring system design, and solving 
+        challenging problems.
+      </p>
+      <a href="resume.html" class="cta-btn">View My Resume</a>
+    </div>
+  </header>
+
+  <!-- About -->
+  <section class="about">
+    <h2>About Me</h2>
+    <p>
+      I’m pursuing a 4+1 dual degree between the University of Notre Dame and Saint Mary’s College. 
+      I'm currently a Computer Science student at Notre Dame wih an expected graduation date in May 2026 and graduted from Saint Mary's College in May 2025 with a B.S. in Computing and Appleid Mathematics.
+      I’ve interned at Microsoft (3x), where I worked on Copilot, gRPC services, and 
+      developer experience tools. I also mentor students through Girls Who Code 
+      and enjoy bridging depth with human impact.
+    </p>
+  </section>
+
+  <!-- Gallery / Highlights -->
+  <section class="gallery">
+    <h2>Highlights</h2>
+    <div class="gallery-grid">
+      <figure>
+        <img src="seattle-kathryn.JPG" alt="Kathryn in Seattle by the Space Needle" />
+        <figcaption>Exploring Seattle</figcaption>
+      </figure>
+      <figure>
+        <img src="smc-grad-kathryn.JPG" alt="Kathryn graduation photo at Saint Mary’s College" />
+        <figcaption>Saint Mary's College Alum</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 Kathryn Cruz | <a href="mailto:kcruz3@nd.edu">kcruz3@nd.edu</a></p>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector(".nav-toggle");
+    const navLinks = document.querySelector(".nav-links");
+
+    toggle.addEventListener("click", () => {
+      navLinks.classList.toggle("show-links");
+    });
+  </script>
+</body>
+</html>

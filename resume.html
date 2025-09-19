@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kathryn Cruz | Resume</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">Kathryn Cruz</a>
+      <button class="nav-toggle" aria-label="toggle menu">
+        ☰
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="resume.html" class="active">Resume</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="resume">
+    <header class="resume-header">
+      <h1>Kathryn Cruz</h1>
+      <p>
+        <a href="tel:+18475646282">847-564-6282</a> | 
+        <a href="mailto:kcruz3@nd.edu">kcruz3@nd.edu</a> | 
+        <a href="https://linkedin.com/in/kathrynccruz" target="_blank">LinkedIn</a>
+      </p>
+
+      <!-- Download Resume Button -->
+      <p>
+        <a class="download-btn" href="Kathryn-Cruz-Resume.pdf" download>
+          📄 Download Resume (PDF)
+        </a>
+      </p>
+    </header>
+
+    <section class="resume-section">
+      <h2>Education</h2>
+      <div class="resume-item">
+        <h3>University of Notre Dame <span class="date">Aug 2021 – May 2026</span></h3>
+        <p>Bachelor of Science – Computer Science</p>
+        <p><em>4+1 Dual Degree Engineering Program with Saint Mary’s College</em></p>
+      </div>
+      <div class="resume-item">
+        <h3>Saint Mary’s College <span class="date">Aug 2021 – May 2025</span></h3>
+        <p>Bachelor of Science – Computing and Applied Mathematics</p>
+        <p><em>4+1 Dual Degree Engineering Program with University of Notre Dame</em></p>
+        <p>Member, Pi Mu Epsilon (Mathematics Honor Society)</p>
+      </div>
+    </section>
+
+    <section class="resume-section">
+      <h2>Experience</h2>
+
+      <div class="resume-item">
+        <h3>Microsoft | Software Engineer Intern <span class="date">May 2025 – Aug 2025</span></h3>
+        <ul>
+          <li>Expanded the semantic modeling language powering Copilot queries.</li>
+          <li>Contributed and merged 3,000+ lines of production code with rigorous review.</li>
+          <li>Enhanced prompt logic for Copilot, refining system instructions.</li>
+          <li>Designed and authored one-pagers and solution approaches for stakeholders.</li>
+        </ul>
+      </div>
+
+      <div class="resume-item">
+        <h3>Microsoft | Software Engineer Intern <span class="date">May 2024 – Aug 2024</span></h3>
+        <ul>
+          <li>Optimized data storage with Compact Signal Store streaming using gRPC.</li>
+          <li>Implemented gRPC service and client for query streaming, reducing latency.</li>
+          <li>Monitored COGS and latency, driving efficiency improvements.</li>
+          <li>Contributed to high-level design and best code practices.</li>
+        </ul>
+      </div>
+
+      <div class="resume-item">
+        <h3>Microsoft | Explorer Intern (Software Engineer + Product Manager) <span class="date">May 2023 – Aug 2023</span></h3>
+        <ul>
+          <li>Developed a dynamic front-end table with React, Node.js, and SCSS.</li>
+          <li>Created a detailed product management spec in Figma.</li>
+          <li>Delivered a robust, intuitive UI with thorough testing.</li>
+        </ul>
+      </div>
+
+      <div class="resume-item">
+        <h3>Girls Who Code | Teaching Assistant <span class="date">June 2022 – Aug 2022</span></h3>
+        <ul>
+          <li>Taught 50–60 students HTML, CSS, and JavaScript via Zoom.</li>
+          <li>Facilitated weekly advisory meetings with community-building activities.</li>
+          <li>Co-hosted Student Hours, assisting with debugging and troubleshooting.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="resume-section">
+      <h2>Projects</h2>
+      <div class="resume-item">
+        <h3>College Resource Website <span class="date">June 2022</span></h3>
+        <ul>
+          <li>Built a resource hub using HTML, CSS, and JavaScript for Girls Who Code mentees.</li>
+          <li>Curated college application resources with examples to aid preparation.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="resume-section">
+      <h2>Technical Skills</h2>
+      <p><strong>Languages & Tools:</strong> Python, C, C#, Java, React Native, HTML, CSS, SCSS, JavaScript, CAD, Figma</p>
+      <p><strong>Other:</strong> Microsoft Office (Excel, PowerPoint), Google Workspace</p>
+    </section>
+  </main>
+  <script>
+    const toggle = document.querySelector(".nav-toggle");
+    const navLinks = document.querySelector(".nav-links");
+
+    toggle.addEventListener("click", () => {
+      navLinks.classList.toggle("show-links");
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kathryn Cruz | Projects</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">Kathryn Cruz</a>
+      <button class="nav-toggle" aria-label="toggle menu">☰</button>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html" class="active">Projects</a></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main class="projects-page">
+    <section class="projects-intro">
+      <h1>Projects</h1>
+      <p>Here are a few of my recent projects!</p>
+    </section>
+
+    <div class="project-item">
+    <h2><a href="https://github.com/kcruz3/senior_comp" target="_blank">Senior Comprehensive Project</a></h2>
+        <p>
+            <em>Mathematical Modeling of Decision-Making in Reinforcement Learning-Based Systems</em> —  
+            my senior comprehensive research project at Saint Mary’s College. I developed a 
+            Q-learning–based movie recommendation system implemented in Python with CherryPy. 
+            The system uses a Q-table, Bellman updates, and an ε-greedy policy to balance 
+            exploration and exploitation in personalizing recommendations.
+        </p>
+        <p>
+            📄 <a href="Kathryn_Cruz_Comp_Final.pdf" target="_blank">Read the full paper (PDF)</a>
+        </p>
+    </div>
+
+
+      <div class="project-item">
+        <h2><a href="https://kcruz411.github.io/CollegePrepSite/" target="_blank">College Prep Site</a></h2>
+        <p>
+          A resource website to support college applicants, built with HTML, CSS, and JavaScript. 
+          Provides easy access to curated materials for application preparation, including examples 
+          and helpful guidance. Focused on accessibility, simplicity, and user-friendly design.
+        </p>
+      </div>
+    </section>
+
+      <div class="project-item">
+        <h2><a href="https://github.com/kcruz3/os-p6" target="_blank">Operating Systems - Project 6</a></h2>
+        <p>
+          An Operating Systems course project (Project 6) focused on implementing a flash translation 
+          layer. Involved working in C with modules for disks, flash storage, and a simulation driver, 
+          while ensuring performance, correctness, and efficient memory management.
+        </p>
+      </div>
+
+      <div class="project-item">
+        <h2><a href="https://github.com/kcruz3/308-project" target="_blank">CPSC 308 Department Portal</a></h2>
+        <p>
+          A web portal created for the Math and Computer Science Department at Saint Mary’s College. 
+          Designed to centralize resources for students and faculty, the portal includes program 
+          overviews, degree planning tools, advising information, and departmental updates. 
+          My work focused on organizing content structure, building responsive pages, and writing 
+          proposal documentation for the final milestone.
+        </p>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 Kathryn Cruz | <a href="mailto:kcruz3@nd.edu">kcruz3@nd.edu</a></p>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector(".nav-toggle");
+    const navLinks = document.querySelector(".nav-links");
+    toggle.addEventListener("click", () => {
+      navLinks.classList.toggle("show-links");
+    });
+  </script>
+</body>
+</html>

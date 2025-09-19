@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kathryn Cruz | Contact</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">Kathryn Cruz</a>
+      <button class="nav-toggle" aria-label="toggle menu">☰</button>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main class="contact-page">
+    <section class="contact-intro">
+      <h1>Contact Me</h1>
+      <p>
+        I’d love to connect! You can reach out through the form below or directly via 
+        <a href="mailto:kcruz3@nd.edu">kcruz3@nd.edu</a>.
+      </p>
+    </section>
+
+    <section class="contact-form-section">
+      <form class="contact-form" action="https://formspree.io/f/your-id" method="POST">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="_replyto" placeholder="you@example.com" required />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="6" placeholder="Write your message..." required></textarea>
+
+        <button type="submit" class="cta-btn">Send Message</button>
+      </form>
+    </section>
+
+    <section class="contact-links">
+      <h2>Connect</h2>
+      <ul>
+        <li><a href="mailto:kcruz3@nd.edu">kcruz3@nd.edu</a></li>
+        <li><a href="https://linkedin.com/in/kathrynccruz" target="_blank">LinkedIn</a></li>
+        <li><a href="https://github.com/kcruz411" target="_blank">Personal GitHub</a></li>
+        <li><a href="https://github.com/kcruz3" target="_blank">Notre Dame GitHub</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 Kathryn Cruz</p>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector(".nav-toggle");
+    const navLinks = document.querySelector(".nav-links");
+    toggle.addEventListener("click", () => {
+      navLinks.classList.toggle("show-links");
+    });
+  </script>
+</body>
+</html>
